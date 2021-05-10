@@ -6,18 +6,20 @@
 			<div
 				class="py-3 flex space-x-3 overflow-auto text-sm whitespace-nowrap"
 			>
-				<a v-for="categoryName in categoriesNames" :key="categoryName"
-					href="#"
-					class="px-3 py-1 transition bg-gray-600 border border-gray-700 rounded-full hover:bg-gray-500 text-white"
-					>{{ categoryName }}</a
-				>
+				<category-item v-for="name in categoriesNames" :key="name" :categoryName="name" :isActive="name === 'All'"/>
 			</div>
 		</div>
 	</section>
 </template>
 
 <script>
+import CategoryItem from './CategoryItem.vue'
+
 export default {
+	components: {
+		CategoryItem,
+	},
+
 	data(){
 		return{
 			categoriesNames: [

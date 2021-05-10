@@ -9,7 +9,7 @@
 
 <script>
 import TheHeader from "./components/TheHeader.vue";
-import TheSmallSidebar from "./components/TheSmallSidebar.vue";
+import TheSmallSidebar from "./components/TheSmallSideBar.vue";
 import TheSidebar from "./components/TheSidebar.vue";
 import TheMobileSidebar from "./components/TheMobileSidebar.vue";
 import TheCategories from "./components/TheCategories.vue";
